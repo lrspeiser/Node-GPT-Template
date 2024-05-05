@@ -1,0 +1,72 @@
+body {
+  background-color: black;
+  color: green;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center; /* Centering game-container */
+  width: 100%;
+}
+
+#input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%; /* Ensures input container fills the width of its parent */
+}
+
+#prompt {
+  color: green;
+  margin-right: 5px;
+  font-family: 'Courier New', monospace;
+}
+
+#userInput {
+  background-color: transparent;
+  color: green;
+  border: none;
+  padding: 10px;
+  font-family: 'Courier New', monospace;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+}
+
+#messageContainer {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px; /* Increased padding for aesthetic spacing */
+  max-width: 800px; /* Maximum width for the message container */
+  width: 100%; /* Ensures it fills the width of its parent up to 800px */
+  align-self: center; /* Center the message container within the game container */
+}
+
+.user-message {
+  text-align: right;
+  background-color: #008001;
+  color: black;
+  padding: 5px; /* Increased padding for better visual separation */
+  border-radius: 5px;
+  margin: 5px; /* Increased margin to enhance separation from other messages */
+  width: auto; /* Allows the message box to size according to its content up to the max width */
+}
+
+.assistant-message {
+  background-color: black;
+  color: #008001;
+  padding: 5px; /* Consistent padding with user message */
+  border-radius: 5px;
+  margin: 10px; /* Ensures consistent spacing around messages */
+  width: auto; /* Allows the message box to size according to its content up to the max width */
+}
